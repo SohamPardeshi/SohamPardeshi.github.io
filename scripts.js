@@ -12,6 +12,7 @@ firebase.initializeApp(config);
 
 var database = firebase.database();
 var ref = database.ref();
+alert(ref);
 
 ref.on('value', function(snapshot){
     alert(snapshot);
