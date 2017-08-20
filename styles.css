@@ -19,22 +19,20 @@ body {
     background: linear-gradient( #eee, #fff);
 }
 
-@media screen and (min-width: 0px) and (max-width: 600px) {
+@media screen and (orientation: portrait) {
     .class {
         visibility: hidden;
         display: none;
     }
 }
 
-@media screen and (min-width: 601px) and (max-width: 1024px) {
-    .class {
-        float: left;
-        height: 50px;
-        line-height: 50px;
-        width: 20%;
-        text-transform: uppercase;
-        text-align: center;
-    }
+.class {
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    width: 20%;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 .center {
