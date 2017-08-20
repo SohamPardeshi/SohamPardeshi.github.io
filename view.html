@@ -1,0 +1,31 @@
+<!Doctype HTML>
+<html>
+<head></head>
+
+<body>
+    <div id="container"></div>
+</body>
+<script src="  https://cdn.rawgit.com/showdownjs/showdown/1.7.2/dist/showdown.min.js
+"></script>
+<script>
+    var urlParams;
+    // Thank you Stack Overflow's Andy E!
+    (window.onpopstate = function () {
+        var match,
+            pl     = /\+/g,  // Regex for replacing addition symbol with a space
+            search = /([^&=]+)=?([^&]*)/g,
+            decode = function (s) { return decodeURIComponent(s.replace(pl, " ")); },
+            query  = window.location.search.substring(1);
+
+        urlParams = {};
+        while (match = search.exec(query))
+           urlParams[decode(match[1])] = decode(match[2]);
+    })();
+    
+    var markdown = atob(urlParams.content);
+    var converter = new showdown.Converter();
+    
+    var container = document.getElementById('container');
+    container.innerHTML = converter.makeHtml(markdown);
+</script>
+</html>
