@@ -2,13 +2,16 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="github-markdown.css">
+    <link rel="stylesheet" href="css/github-markdown.css">
+    <link rel="stylesheet" href="css/default.min.css">
+    <script src="js/highlight.min.js"></script>
+    <title>View Page</title>
 </head>
 
 <body>
     <article class="markdown-body"></article>
 </body>
-<script src="  https://cdn.rawgit.com/showdownjs/showdown/1.7.2/dist/showdown.min.js
+<script src="js/showdown.min.js
 "></script>
 <script>
     var urlParams;
@@ -30,5 +33,9 @@
     
     var container = document.querySelector('article');
     container.innerHTML = converter.makeHtml(markdown);
+    
+    var title = document.querySelector('title');
+    title.innerHTML = urlParams.title;
 </script>
+<script>hljs.initHighlightingOnLoad();</script>
 </html>

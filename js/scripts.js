@@ -46,7 +46,7 @@ function display() {
         var date = new Date(obj.dateModified);
         
         var txt = 
-        "<a href='view.html?content=" + btoa(obj.contents) + "'><div class='note'>" + 
+        "<a href='view.html?content=" + btoa(obj.contents) + "&title=" + obj.filename + "'><div class='note'>" + 
             
         "<div class='class'>" + obj.className +  "</div>" +
         "<div class='center'>" + 
