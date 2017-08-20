@@ -1,9 +1,12 @@
 <!Doctype HTML>
 <html>
-<head></head>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="github-markdown.css">
+</head>
 
 <body>
-    <div id="container"></div>
+    <article class="markdown-body"></article>
 </body>
 <script src="  https://cdn.rawgit.com/showdownjs/showdown/1.7.2/dist/showdown.min.js
 "></script>
@@ -25,7 +28,7 @@
     var markdown = atob(urlParams.content);
     var converter = new showdown.Converter();
     
-    var container = document.getElementById('container');
+    var container = document.querySelector('article');
     container.innerHTML = converter.makeHtml(markdown);
 </script>
 </html>
