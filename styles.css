@@ -18,13 +18,23 @@ body {
     background: -moz-linear-gradient( #e7e7e7, #ecf0f1);
     background: linear-gradient( #eee, #fff);
 }
-.class {
-    float: left;
-    height: 50px;
-    line-height: 50px;
-    width: 20%;
-    text-transform: uppercase;
-    text-align: center;
+
+@media screen and (min-width: 0px) and (max-width: 600px) {
+    .class {
+        visibility: hidden;
+        display: none;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .class {
+        float: left;
+        height: 50px;
+        line-height: 50px;
+        width: 20%;
+        text-transform: uppercase;
+        text-align: center;
+    }
 }
 
 .center {
@@ -32,7 +42,7 @@ body {
 }
 
 .name {
-    font-size: 20px;
+    font-size: 22px;
     font-family: 'Open Sans';
 }
 
@@ -48,6 +58,7 @@ body {
 .right {
     float: right;
     width: 7%;
+    margin: 15px;
 }
 
 .note:hover .arrow {
@@ -61,6 +72,5 @@ body {
     border-bottom: 6px solid rgb(127, 140, 141);
     height: 15px;
     width: 15px;
-    margin-top: 15px;
     transform: rotate(-45deg);
 }
