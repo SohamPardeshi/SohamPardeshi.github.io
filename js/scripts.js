@@ -20,6 +20,7 @@ ref.once('value').then(function(snap){
         notes.push(snap.val()[key])
     }
     sortNotes();
+    filterNotes();
     display();
 });
 
@@ -33,6 +34,30 @@ function sortNotes(){
       return 0;
     }
     notes.sort(compare);
+}
+
+function filterNotes() {
+    var urlParams;
+    // Thank you Stack Overflow's Andy E!
+    (window.onpopstate = function () {
+        var match,
+            pl     = /\+/g,  // Regex for replacing addition symbol with a space
+            search = /([^&=]+)=?([^&]*)/g,
+            decode = function (s) { return decodeURIComponent(s.replace(pl, " ")); },
+            query  = window.location.search.substring(1);
+
+        urlParams = {};
+        while (match = search.exec(query))
+           urlParams[decode(match[1])] = decode(match[2]);
+    })();
+    
+    if(urlParams.search == undefined) return;
+    var search = urlParams.search.toLowerCase();
+    notes = notes.filter(function(obj){
+        console.log(obj);
+        return obj.className.toLowerCase().includes(search) || obj.contents.toLowerCase().includes(search) || obj.filename.toLowerCase().includes(search);
+    });
+    
 }
 
 
