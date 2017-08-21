@@ -420,8 +420,8 @@
 .markdown-body pre {
   margin-top: 0;
   margin-bottom: 16px;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 .markdown-body hr {
@@ -470,8 +470,8 @@
   margin-bottom: 16px;
   font-weight: 600;
   line-height: 1.25;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 38px;
+  margin-right: 38px;
   font-family: 'Ubuntu';
 }
 
