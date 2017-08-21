@@ -298,10 +298,14 @@
 .markdown-body p {
   margin-top: 0;
   margin-bottom: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .markdown-body blockquote {
   margin: 0;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .markdown-body ul,
@@ -309,6 +313,8 @@
   padding-left: 0;
   margin-top: 0;
   margin-bottom: 0;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .markdown-body ol ol,
@@ -414,6 +420,8 @@
 .markdown-body pre {
   margin-top: 0;
   margin-bottom: 16px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .markdown-body hr {
@@ -462,6 +470,9 @@
   margin-bottom: 16px;
   font-weight: 600;
   line-height: 1.25;
+  margin-left: 50px;
+  margin-right: 50px;
+  font-family: 'Ubuntu';
 }
 
 .markdown-body h1 .octicon-link,
@@ -498,6 +509,12 @@
   font-size: 2.3em;
   text-align: center;
   border-bottom: 1px solid #eaecef;
+  margin: 0;
+    
+  background: #212121;
+  color: white;
+  padding: 15px;
+  margin-bottom: 10px;
 }
 
 .markdown-body h2 {
@@ -516,6 +533,8 @@
 
 .markdown-body h5 {
   font-size: 0.875em;
+  color: #888;
+  float: right;
 }
 
 .markdown-body h6 {

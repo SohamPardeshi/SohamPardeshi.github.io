@@ -70,7 +70,8 @@ function display() {
     for(note in notes){
         var obj = notes[note];
         var date = new Date(obj.dateModified);
-        var str = "view.html?content=" + btoa(obj.contents) + "&title=" + obj.filename;
+        
+        var str = "view.html?content=" + btoa(unescape(encodeURIComponent(obj.contents))) + "&title=" + obj.filename;
         
         var txt = 
         "" +

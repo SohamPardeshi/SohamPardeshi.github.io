@@ -2,40 +2,54 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    
     <link rel="stylesheet" href="css/github-markdown.css">
     <link rel="stylesheet" href="css/default.min.css">
-    <script src="js/highlight.min.js"></script>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+
+    
+    
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/showdown.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+    <link rel="stylesheet" href="css/soham-markdown-css.css">
     <title>View Page</title>
 </head>
 
 <body>
+    
+    <div class="content">
     <article class="markdown-body"></article>
-</body>
-<script src="js/showdown.min.js
-"></script>
-<script>
-    var urlParams;
-    // Thank you Stack Overflow's Andy E!
-    (window.onpopstate = function () {
-        var match,
-            pl     = /\+/g,  // Regex for replacing addition symbol with a space
-            search = /([^&=]+)=?([^&]*)/g,
-            decode = function (s) { return decodeURIComponent(s.replace(pl, " ")); },
-            query  = window.location.search.substring(1);
+    </div>
+    <footer>&copy;Copyright 2017 Soham Pardeshi</footer>
+    <script>
+        var urlParams;
+        // Thank you Stack Overflow's Andy E!
+        (window.onpopstate = function () {
+            var match,
+                pl     = /\+/g,  // Regex for replacing addition symbol with a space
+                search = /([^&=]+)=?([^&]*)/g,
+                decode = function (s) { return decodeURIComponent(s.replace(pl, " ")); },
+                query  = window.location.search.substring(1);
 
-        urlParams = {};
-        while (match = search.exec(query))
-           urlParams[decode(match[1])] = decode(match[2]);
-    })();
-    
-    var markdown = atob(urlParams.content);
-    var converter = new showdown.Converter();
-    
-    var container = document.querySelector('article');
-    container.innerHTML = converter.makeHtml(markdown);
-    
-    var title = document.querySelector('title');
-    title.innerHTML = urlParams.title;
-</script>
-<script>hljs.initHighlightingOnLoad();</script>
+            urlParams = {};
+            while (match = search.exec(query))
+               urlParams[decode(match[1])] = decode(match[2]);
+        })();
+
+        var markdown = atob(urlParams.content);
+        var converter = new showdown.Converter();
+
+        var container = document.querySelector('article');
+        container.innerHTML = converter.makeHtml(markdown);
+
+        var title = document.querySelector('title');
+        title.innerHTML = urlParams.title;
+        
+        hljs.initHighlightingOnLoad();
+    </script>
+
+</body>
 </html>
