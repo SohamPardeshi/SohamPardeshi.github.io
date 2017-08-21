@@ -6,11 +6,44 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+
 		<link rel="stylesheet" href="css/styles.css" />
+
 	</head>
 	<body>
+        <nav>
+        <div class="nav-wrapper">
+          <form>
+            <div class="input-field">
+              <input id="search" type="search" required placeholder="Search...">
+              <label class="label-icon" for="search"></label>
+            </div>
+          </form>
+        </div>
+      </nav>
         
-        <div id="container"></div>
+        <div id="myspinner">
+          <div class="preloader-wrapper big active">
+            <div class="spinner-layer spinner-yellow-only">
+              <div class="circle-clipper left">
+                <div class="circle"></div>
+              </div><div class="gap-patch">
+                <div class="circle"></div>
+              </div><div class="circle-clipper right">
+                <div class="circle"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="contain" class="row"></div>
+        
+        
         
         <script src="js/date.extensions.js"></script>
         <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>

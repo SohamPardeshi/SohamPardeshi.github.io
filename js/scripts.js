@@ -39,22 +39,29 @@ function sortNotes(){
 function display() {
     if(notes.length == 0) alert("No notes found...");
     
-    var container = document.getElementById('container');
+    var container = document.getElementById('contain');
+    document.getElementById('myspinner').remove();
     
     for(note in notes){
         var obj = notes[note];
         var date = new Date(obj.dateModified);
+        var str = "view.html?content=" + btoa(obj.contents) + "&title=" + obj.filename;
         
         var txt = 
-        "<a href='view.html?content=" + btoa(obj.contents) + "&title=" + obj.filename + "'><div class='note'>" + 
-            
-        "<div class='class'>" + obj.className +  "</div>" +
-        "<div class='center'>" + 
-            "<div class='name'>" + obj.filename +  "</div>" +
-            "<div class='date'>Last Modified: <span>" + date.toRelativeTime() +  "</span></div>" +
-        "</div>" +
-        "<div class='right'><div class='arrow'></div></div>"+
-        "</div></a>";
+        "" +
+        "        <div class='col s12 m3'>"+
+        "            <div class='card darken-1'>"+
+        "                <div class='card-content black-text'>"+
+        "                    <span class='myclass'>" + obj.className +  "</span>"+
+        "                    <span class='card-title'>" + obj.filename +  "</span>"+
+        "                </div>"+
+        "                <div class='card-action'>"+
+        "                       <span class='mydate'>" + date.toRelativeTime() + "</span>" +
+        "                       <a class='waves-effect waves-light btn ' style='margin-left: 40px;' href='" + str + "' >View</a>" +
+        "                </div>"+
+        "            </div>"+
+        "        </div>"+
+        ""
         
         container.innerHTML += txt;
     }
