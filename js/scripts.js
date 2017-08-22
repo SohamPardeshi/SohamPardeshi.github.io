@@ -71,7 +71,7 @@ function display() {
         var obj = notes[note];
         var date = new Date(obj.dateModified);
         
-        var str = "view?content=" + btoa(unescape(encodeURIComponent(obj.contents))) + "&title=" + obj.filename;
+        var str = "view?content=" + btoa(encodeURIComponent(obj.className + " - " + obj.filename));
         
         var txt = 
         "" +
@@ -86,8 +86,7 @@ function display() {
         "                       <a class='waves-effect waves-light btn ' style='margin-left: 40px;' href='" + str + "' >View</a>" +
         "                </div>"+
         "            </div>"+
-        "        </div>"+
-        ""
+        "        </div>";
         
         container.innerHTML += txt;
     }
