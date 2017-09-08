@@ -81,11 +81,12 @@
         var ref = db.ref("files/" + link);
 
 
-        ref.once('value').then(function(snap){            
+        ref.once('value').then(function(snap){     
+            console.log(snap.val())
             var converter = new showdown.Converter();
 
             var container = document.querySelector('article');
-            container.innerHTML = converter.makeHtml(snap.val().contents);
+            container.innerHTML = converter.makeHtml(snap.val());
 
             document.getElementById('myspinner').remove();
             

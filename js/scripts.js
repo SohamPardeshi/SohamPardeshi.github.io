@@ -11,7 +11,7 @@ firebase.initializeApp(config);
 
 
 var db = firebase.database();
-var ref = db.ref("files");
+var ref = db.ref("meta");
 var notes = []
 
 
