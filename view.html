@@ -2,7 +2,6 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel='icon' href="img/notepad-icon.png"/>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
     
     <link rel="stylesheet" href="css/github-markdown.css">
@@ -24,9 +23,7 @@
     <script type="text/x-mathjax-config">
       MathJax.Hub.Config({
         tex2jax: {
-            inlineMath: [['$','$'], ['\\(','\\)']],
-            displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
-            processEscapes: true
+            inlineMath: [['$','$'], ['\\(','\\)']]
         }
       });
     </script>
@@ -94,8 +91,6 @@
         var db = firebase.database();
         var ref = db.ref("files/" + link);
         
-        var title = document.querySelector('title');
-        title.innerHTML = link;
         
 
 
