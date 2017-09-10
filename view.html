@@ -90,8 +90,6 @@
         
         var db = firebase.database();
         var ref = db.ref("files/" + link);
-        
-        
 
 
         ref.once('value').then(function(snap){     
