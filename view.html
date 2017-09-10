@@ -2,17 +2,26 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    
     <link rel='icon' href="img/notepad-icon.png"/>
     <link rel="stylesheet" href="css/github-markdown.css">
     <link rel="stylesheet" href="css/default.min.css">
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
-    
-    <script src="js/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
-        
+    
+    
+    <style>
+        #myspinner {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+    
     <script type="text/x-mathjax-config">
       MathJax.Hub.Config({
         tex2jax: {
@@ -24,6 +33,7 @@
       src="mathjax/MathJax.js?config=TeX-AMS_CHTML">
     </script>
     
+    <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/showdown.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
@@ -81,7 +91,7 @@
         
         var db = firebase.database();
         var ref = db.ref("files/" + link);
-        document.title = link;
+
 
         ref.once('value').then(function(snap){     
             console.log(snap.val())
