@@ -81,13 +81,30 @@ function display() {
         "                    <span class='myclass'>" + obj.className +  "</span>"+
         "                    <span class='card-title'>" + obj.filename +  "</span>"+
         "                </div>"+
-        "                <div class='card-action'>"+
+        "          <center><div class='card-action'>"+
         "                       <span class='mydate'>" + date.toRelativeTime() + "</span>" +
-        "                       <a class='waves-effect waves-light btn ' style='margin-left: 40px;' href='" + str + "' >View</a>" +
-        "                </div>"+
+        "                       <a class='waves-effect waves-light btn' style='margin-left: 40px;' href='" + str + "' >View</a>" +
+        "                </div></center>"+
         "            </div>"+
         "        </div>";
         
         container.innerHTML += txt;
     }
 }
+
+function equalize() {
+    var maxHeight = 0;
+    var part = ".card-content";
+    
+    
+    $(part).each(function(){
+        $(this).css('height', 'auto');
+        if ($(this).height() > maxHeight) { maxHeight = $(this).height(); }
+    });
+
+    $(part).height(maxHeight);
+}
+window.onload = function() { equalize(); }
+window.addEventListener("resize", function() {
+    equalize();
+});
