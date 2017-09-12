@@ -22,8 +22,12 @@
     
     <script type="text/x-mathjax-config">
       MathJax.Hub.Config({
+        skipStartupTypeset: true,
+        extensions: ["tex2jax.js", "TeX/AMSmath.js"],
+        jax: ["input/TeX", "output/HTML-CSS"],
         tex2jax: {
-            inlineMath: [['$','$'], ['\\(','\\)']]
+            inlineMath: [['$','$'], ['\\(','\\)']],
+            processEscapes: true
         }
       });
     </script>
@@ -56,10 +60,16 @@
           </div>
         </div>
     <div class="content">
-    <article class="markdown-body"></article>
+    <article id="render-me" class="markdown-body"></article>
     </div>
     <footer>&copy;Copyright 2017 Soham Pardeshi</footer>
     <script>
+        
+        function startTypeSetting() {
+          var HUB = MathJax.Hub;
+          HUB.Queue(["Typeset", HUB, "render-me"]);
+        }
+        
         var urlParams;
         // Thank you Stack Overflow's Andy E!
         (window.onpopstate = function () {
@@ -88,6 +98,7 @@
             container.innerHTML = converter.makeHtml(snap.val());
 
             document.getElementById('myspinner').remove();
+            startTypeSetting();
             hljs.initHighlightingOnLoad();
         });
     </script>
