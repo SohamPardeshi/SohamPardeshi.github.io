@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Soham Pardeshi</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+
+        <link rel='icon' href="img/notepad-icon.png"/>
+
+	</head>
+	<body>
+        
+       
+        
+        
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+        <script src="js/init.js"></script>
+        <script>
+            var provider = new firebase.auth.GoogleAuthProvider();
+        
+            firebase.auth().signInWithPopup(provider)
+                .then(function(result) {
+                    var token = result.credential.accessToken;
+                    var user = result.user;
+                
+                })
+                .catch(function(error) {
+                    var code = error.code;
+                    var msg = error.message;
+                    var email = error.email;
+                    var cred = error.credential;
+                
+                    alert("Error " + code + ": " + msg);
+                    console.log("Email: " + email);
+                    console.log("Credential: " + cred);
+                    
+                });
+        </script>
+	</body>
+</html>
