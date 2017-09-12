@@ -15,7 +15,9 @@
 	</head>
 	<body>
         
-       
+        <center>
+            <a id="signin" class="waves-effect waves-light btn-large">Sign In</a>
+        </center>
         
         
         <script src="js/jquery-3.2.1.min.js"></script>
@@ -24,24 +26,28 @@
         <script src="js/init.js"></script>
         <script>
             var provider = new firebase.auth.GoogleAuthProvider();
-        
-            firebase.auth().signInWithPopup(provider)
-                .then(function(result) {
-                    var token = result.credential.accessToken;
-                    var user = result.user;
-                
-                })
-                .catch(function(error) {
-                    var code = error.code;
-                    var msg = error.message;
-                    var email = error.email;
-                    var cred = error.credential;
-                
-                    alert("Error " + code + ": " + msg);
-                    console.log("Email: " + email);
-                    console.log("Credential: " + cred);
+            
+            $("#signin").click(function() {
+                firebase.auth().signInWithPopup(provider)
+                    .then(function(result) {
+                        var token = result.credential.accessToken;
+                        var user = result.user;
                     
-                });
+                        console.log(user);
+
+                    })
+                    .catch(function(error) {
+                        var code = error.code;
+                        var msg = error.message;
+                        var email = error.email;
+                        var cred = error.credential;
+
+                        alert("Error " + code + ": " + msg);
+                        console.log("Email: " + email);
+                        console.log("Credential: " + cred);
+
+                    });
+            });
         </script>
 	</body>
 </html>
