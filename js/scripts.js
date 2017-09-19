@@ -60,8 +60,6 @@ function filterNotes() {
 
 
 function display() {
-    console.log("Test");
-    console.log(notes);
     if(notes.length == 0) return alert("No notes found...");
     
     var container = document.getElementById('contain');
