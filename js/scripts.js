@@ -91,6 +91,7 @@ function display() {
         
         container.innerHTML += txt;
     }
+    equalize();
 }
 
 function equalize() {
@@ -105,7 +106,6 @@ function equalize() {
 
     $(part).height(maxHeight);
 }
-window.onload = function() { equalize(); }
 window.addEventListener("resize", function() {
     equalize();
 });
