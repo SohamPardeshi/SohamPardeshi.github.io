@@ -8,7 +8,6 @@ ref.once('value').then(function(snap){
     }
     sortNotes();
     filterNotes();
-    display();
 });
 
 
@@ -38,21 +37,38 @@ function filterNotes() {
            urlParams[decode(match[1])] = decode(match[2]);
     })();
     
-    if(urlParams.search == undefined) return;
-    var search = urlParams.search.toLowerCase();
-    notes = notes.filter(function(obj){
-        console.log(obj);
-        return obj.className.toLowerCase().includes(search) || obj.filename.toLowerCase().includes(search);
-    });
+    if(urlParams.search == undefined){
+        display()
+        return;
+    }
     
+    var files = {}
+    db.ref("files").once('value').then(function(snap){
+        for(var tmp in snap.val())
+            files[tmp] = snap.val()[tmp];
+        
+        var search = urlParams.search.toLowerCase();
+        notes = notes.filter(function(obj){
+            return obj.className.toLowerCase().includes(search) ||
+                files[obj.className + " - " + obj.filename].toLowerCase().includes(search)|| 
+                obj.filename.toLowerCase().includes(search);
+        });
+
+        display();
+    });
 }
 
 
 function display() {
-    if(notes.length == 0) alert("No notes found...");
+    console.log("Test");
+    console.log(notes);
+    if(notes.length == 0) return alert("No notes found...");
     
     var container = document.getElementById('contain');
-    document.getElementById('myspinner').remove();
+    container.innerHTML = "";
+  
+    var spinner = document.getElementById('myspinner');
+    if(spinner !== null) spinner.remove();
     
     for(note in notes){
         var obj = notes[note];
