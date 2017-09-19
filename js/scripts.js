@@ -42,7 +42,7 @@ function filterNotes() {
     var search = urlParams.search.toLowerCase();
     notes = notes.filter(function(obj){
         console.log(obj);
-        return obj.className.toLowerCase().includes(search) || obj.contents.toLowerCase().includes(search) || obj.filename.toLowerCase().includes(search);
+        return obj.className.toLowerCase().includes(search) || obj.filename.toLowerCase().includes(search);
     });
     
 }
