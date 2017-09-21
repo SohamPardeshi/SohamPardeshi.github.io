@@ -106,6 +106,33 @@ function equalize() {
 
     $(part).height(maxHeight);
 }
+
+function modal() {
+    $('.fixed-action-btn.toolbar').closeToolbar();
+    $('.fixed-action-btn.toolbar').hide();
+    
+    var modal = document.getElementById('myModal');
+    var span = document.getElementsByClassName("close")[0];
+
+    modal.style.display = "block";
+    span.onclick = function() {
+            modal.style.display = "none";
+            $('.fixed-action-btn.toolbar').show();
+    };
+    
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+            $('.fixed-action-btn.toolbar').show();
+        }
+    }
+}
+
+function closeModal() {
+    
+}
+
+
 window.addEventListener("resize", function() {
     equalize();
 });
