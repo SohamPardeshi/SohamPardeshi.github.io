@@ -3,6 +3,24 @@
     <title> Spotify Test </title>
   <head>
   <body>
-    <p> Test8 </p>
+    <h1><b>Spotify Access Token </b></h1>
+    <h3 id="token" >No Token Found</h3>
   </body>
+    
+  <script>
+    function getParameterByName(name, url) {
+        if (!url) url = window.location.href;
+        name = name.replace(/[\[\]]/g, '\\$&');
+        var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+            results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, ' '));
+    }
+    
+    var el = document.getElementById("token");
+    if(getParameterByName(code)) {
+      el.innerText = code; 
+    }
+  </script>
 </html>
