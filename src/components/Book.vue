@@ -4,7 +4,7 @@
             <img :src="image">
         </figure>
         <div id="tooltip" role="tooltip" ref="tooltip">
-            {{ name }} by {{ author }}
+            {{ name }} <br/> by {{ author }}
             <div id="arrow" data-popper-arrow></div>
         </div>
     </div>
@@ -106,7 +106,7 @@
     #tooltip {
         background: #333;
         color: white;
-        font-weight: bold;
+
         padding: 4px 8px;
         font-size: 13px;
         border-radius: 4px;

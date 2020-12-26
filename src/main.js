@@ -11,6 +11,9 @@ import tippy from 'tippy.js';
 import 'tippy.js/dist/tippy.css';
 Vue.prototype.$tippy = tippy;
 
+import {VueMasonryPlugin} from 'vue-masonry';
+Vue.use(VueMasonryPlugin)
+
 import Buefy from 'buefy';
 import 'buefy/dist/buefy.css';
 Vue.use(Buefy);

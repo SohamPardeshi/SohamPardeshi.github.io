@@ -34,7 +34,13 @@
 </script>
 
 <!-- SCSS Styles -->
-<style lang="scss" scoped>    
+<style lang="scss" scoped>
+    .section {
+        @media screen and (max-width: 550px) {
+            padding-top: 24px;
+        }
+    }
+    
     #name {
         font-size: 30px;
         line-height: 40px;
