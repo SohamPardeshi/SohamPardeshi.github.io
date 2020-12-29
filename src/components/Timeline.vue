@@ -5,11 +5,11 @@
             <ul>
                 <li v-for="(info, index) in timeline_data" v-bind:key="index">
                     <span></span>
-                    <div>{{ info.school }}</div>
-                    <div>{{ info.address }}</div>
-                    <div>{{ info.course }}</div>
-                    <div>{{ info.minor }}</div>
-                    <div class="year">
+                    <div class="subtext">{{ info.school }}</div>
+                    <div class="subtext">{{ info.address }}</div>
+                    <div class="subtext">{{ info.course }}</div>
+                    <div class="subtext">{{ info.minor }}</div>
+                    <div class="year subtext">
                         <span>{{ info.yearEnd }}</span>
                         <span>{{ info.yearStart }}</span>
                     </div>
@@ -55,21 +55,7 @@
 
 <!-- SCSS Styles -->
 <style lang="scss" scoped>    
-$font-stack: 'Source Sans Pro', sans-serif;
 $font-color: #000;
-$bg-color: #fff;
-$dark-blue: #fff;
-$light-blue: #7957d5;
-    
-.title {        
-    font-size: 30px;
-    font-weight: 400;
-    line-height: 40px;
-
-    @media screen and (max-width: 550px) {
-        font-size: 25px;
-    }
-}
 
 @mixin clearfix {
     content: '';
@@ -97,25 +83,30 @@ $light-blue: #7957d5;
         width: 100%;
         list-style: none;
         line-height: 25px;
+        
         &>span {
             @include clearfix();
             left: -25px;
             height: 110%;
             @include set-border(1px, gray, none);
         }
+        
         &>span::before, &>span::after {
             @include clearfix();
             width: 14px; height: 14px;
-            @include set-border(1px, lightgray, 50%);
+            @include set-border(1px, gray, 50%);
             left: -7px;
-            background: $light-blue;
+            background: #7957d5;
         }
+        
         &>span::before {
             top: -15px;
         }
+        
         &>span::after {
             top: 100%;
         }
+        
         div {
             &:nth-child(2) {
                 font-size: 1.2em;
@@ -123,16 +114,15 @@ $light-blue: #7957d5;
             &:nth-child(3), &:nth-child(4), &:nth-child(5) {
                 font-size: 1em;
                 font-style: italic;
-                color: darken($font-color, 25%);
             }
         }
+        
         .year span {
             position: absolute;
             font-size: 1em;
             left: -85px;
             width: 40px;
             text-align: right;
-            color: black;
             &:first-child {
                 top: -20px;
             }
@@ -140,6 +130,7 @@ $light-blue: #7957d5;
                 top: 100%;
             }
         }
+        
     }
 }
 </style>

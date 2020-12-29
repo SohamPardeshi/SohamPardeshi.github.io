@@ -43,12 +43,10 @@
             });
             
             function show() {
-                console.log("asdf");
                 tooltip.setAttribute('data-show', '');
             }
 
             function hide() {
-                console.log()
                 tooltip.removeAttribute('data-show');
             }
 

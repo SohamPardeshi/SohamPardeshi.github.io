@@ -6,7 +6,8 @@
             <div id="image-tile" class="tile is-ancestor">
                 <div class="tile is-4">
                     <figure class="image">
-                        <img src="@/assets/profile.jpg" alt="Soham's Profile Picture">
+                        <img v-bind:class="{ hidden: !isDark }" src="@/assets/profile-horns.jpg" alt="Soham's Profile Picture">
+                        <img v-bind:class="{ hidden:  isDark }" src="@/assets/profile.jpg" alt="Soham's Profile Picture">
                     </figure>
                 </div>
                 <div id="about-tile" class="tile is-vertical is-parent">
@@ -16,7 +17,7 @@
                     <div class="tile is-child">
                         <p class="subtitle">I am currently an undergraduate at the University of Washington studying Philosophy and Computer Science. I am most interested in thinking about classical artificial intelligence techniques and understanding their epistemological underpinnings. Recently, I have been trying to learn more about theory. I have particularly enjoyed learning about game theory incentives in computer science.</p>
 
-                        <p class="subtitle">Some part of my week is usually dedicated to teaching. I really like giving students a great "second experience" with computer science. While in California, I helped out at <a href="https://techlab.education/">Techlab Education</a> for about three years. At the UW, I am a veteran teaching assistant for the <a href="http://courses.cs.washington.edu/courses/cse14x/ta/">CSE 14x series</a> and have also helped mentor students from high schools in the Bay Area. </p>
+                        <p class="subtitle">Some part of my week is usually dedicated to teaching. I really like giving students a great "second experience" with computer science. While in California, I helped out at <a href="https://techlab.education/" target="_blank" rel="noopener noreferrer">Techlab Education</a> for about three years. At the UW, I am a veteran teaching assistant for the <a href="http://courses.cs.washington.edu/courses/cse14x/ta/" target="_blank" rel="noopener noreferrer">CSE 14x series</a> and have also helped mentor students from high schools in the Bay Area. </p>
                         
                         <p>Contact me at <span class="blue">spard [at] cs [dot] washington [dot] edu</span></p>
                     </div>
@@ -30,6 +31,9 @@
 <script>
     export default {
         name: "Introduction",
+        props: {
+            isDark: Boolean
+        }
     }
 </script>
 
@@ -39,6 +43,10 @@
         @media screen and (max-width: 550px) {
             padding-top: 24px;
         }
+    }
+    
+    .hidden {
+        display: none;
     }
     
     #name {

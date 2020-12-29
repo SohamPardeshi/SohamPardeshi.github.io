@@ -46,6 +46,7 @@
                 isLoading: true,
                 books: null,
                 updated: null,
+                box: null
             }
         },
         
@@ -72,6 +73,7 @@
 
 <!-- SCSS Styles -->
 <style lang="scss" scoped>
+
     #box {
         margin: 5px 0;
         padding: 15px;

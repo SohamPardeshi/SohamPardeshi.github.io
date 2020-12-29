@@ -14,6 +14,9 @@ Vue.prototype.$tippy = tippy;
 import {VueMasonryPlugin} from 'vue-masonry';
 Vue.use(VueMasonryPlugin)
 
+import VueContentPlaceholders from 'vue-content-placeholders'
+Vue.use(VueContentPlaceholders)
+
 import Buefy from 'buefy';
 import 'buefy/dist/buefy.css';
 Vue.use(Buefy);
@@ -30,6 +33,7 @@ Vue.use(VueMq, {
 // Our libraries
 import App from "./App.vue";
 import router from "./router";
+import '@/styles/_main.scss';
 
 // Let's avoid that console print while developing
 Vue.config.productionTip = false;

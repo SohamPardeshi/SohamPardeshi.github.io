@@ -27,7 +27,7 @@
 
 <!-- SCSS Styles -->
 <style lang="scss" scoped>    
-    footer {
+    .footer {
         padding-bottom: 48px;
     }
     
