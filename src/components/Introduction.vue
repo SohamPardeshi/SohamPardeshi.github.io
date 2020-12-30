@@ -57,6 +57,7 @@
             font-size: 25px;
         }
     }
+    
     #pronouns {
         margin: 5px;
         font-size: 20px;

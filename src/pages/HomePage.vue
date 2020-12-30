@@ -1,15 +1,10 @@
 <template>
     <div class="page">
-        <nav class="level dark-navbar">
-            <div class="level-left"> </div>
-            <div class="level-right">
-                <span class="level-item toggle-parent">
-                    <Toggle @toggle="handleToggle" />
-                </span>
-            </div>
-        </nav>
-
         
+        <div class="top-right" >
+            <Toggle @toggle="handleToggle" />   
+        </div>
+             
         <Introduction :isDark="isDark" />
         
         <section class="section">
@@ -77,7 +72,13 @@
         }
         
         min-height: 100vh;
-        // background-color: rgb(245, 248, 250);
+        padding-top: 40px; 
+    }
+    
+    .top-right {
+        position: absolute;
+        top: 15px;
+        right: 20px;
     }
     
     .toggle-parent {
