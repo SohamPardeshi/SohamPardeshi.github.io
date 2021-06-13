@@ -15,7 +15,7 @@
                         <p id="name">Soham Pardeshi <span id="pronouns">(he/him)</span></p>
                     </div>
                     <div class="tile is-child">
-                        <p class="subtitle">I am currently an undergraduate at the University of Washington studying Philosophy and Computer Science. I am most interested in thinking about classical artificial intelligence techniques and understanding their epistemological underpinnings. Recently, I have been trying to learn more about theory. I have particularly enjoyed learning about game theory incentives in computer science.</p>
+                        <p class="subtitle">I am currently a Master's student at the University of Washington studying Philosophy and Computer Science. I am most interested in thinking about classical artificial intelligence techniques and understanding their epistemological underpinnings. Recently, I have been trying to learn more about theory. I have particularly enjoyed learning about game theory incentives in computer science.</p>
 
                         <p class="subtitle">Some part of my week is usually dedicated to helping others learn. I really like giving students a great "second experience" with computer science. While in California, I helped out at <a href="https://techlab.education/" target="_blank" rel="noopener noreferrer">Techlab Education</a> for about three years. At the UW, I am a veteran teaching assistant for the <a href="http://courses.cs.washington.edu/courses/cse14x/ta/" target="_blank" rel="noopener noreferrer">CSE 14x series</a> and have also helped mentor students from high schools in the Bay Area. </p>
                         
