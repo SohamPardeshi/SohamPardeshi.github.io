@@ -1,17 +1,17 @@
 <template>
         <div style="container">
-            <p class="title">Audiobooks</p>
-            <p>In addition to reading, I listen to audiobooks (often fantasy novels) to relax. Here are my most recent listens:</p>
+            <p class="title">Books</p>
+            <p>To relax, I enjoy reading and listening to audiobooks (often fantasy novels). Here are my most recent reads:</p>
             <div id="box">
                 <div v-if="books != null">
                     
                     <div v-masonry="box" transition-duration="0.2s" item-selector=".item">
                         <div v-masonry-tile class="item" v-for="book in books" :key="book.asin">
                             <Book 
-                                :name="book.title"
-                                :author="book.authors[0].name"
-                                :description="book.merchandising_summary"
-                                :image="book.product_images['500']"
+                                :name="book[0]"
+                                :author="book[1]"
+                                :description="book[0]"
+                                :image="book[2]"
                             />
                         </div>
                     </div>
@@ -22,7 +22,7 @@
             
             <div class="columns">
                 <div class="column is-8">
-                    <span class="gray">I automatically scrape this data from Audible since they don't have a public API. Please don't sue me. </span>
+                    <span class="gray">I automatically scrape this data from Audible and Goodreads since they don't have a public API. Please don't sue me. </span>
                 </div>
                 <div class="column">
                     <span class="gray"> Updated at {{this.updated}}</span>
@@ -53,7 +53,7 @@
         mounted () {
             this.$http.get('https://students.washington.edu/spard/personal/')
                 .then((response) => {
-                    this.books = response.data["items"]
+                    this.books = response.data["items"].slice(0, 20)
                     this.updated = response.data["lastUpdated"]
                 }).catch((error) => {
                     console.log(error)
