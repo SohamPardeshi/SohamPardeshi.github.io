@@ -1,6 +1,6 @@
 <template>
         <div style="container">
-            <p class="title">Books</p>
+            <p class="title">Currently Reading</p>
             <p>To relax, I enjoy reading and listening to audiobooks (often fantasy novels). Here are my most recent reads:</p>
             <div id="box">
                 <div v-if="books != null">
