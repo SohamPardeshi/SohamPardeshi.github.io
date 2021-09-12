@@ -4,6 +4,12 @@ from bs4 import BeautifulSoup
 from datetime import datetime
 from urllib.parse import quote
 
+def full_image(image):
+    resources = image.split('/')
+    last = resources[-1].split('.')
+    resources[-1] = last[0] + '.' + last[-1]
+    return '/'.join(resources)
+
 def flip(author):
     tmp = author.replace('*', '').split(',')
     if len(tmp) == 1:
@@ -56,7 +62,7 @@ def get_goodreads_data():
         
         images = page.select("img.bc-image-inset-border")
         if len(images) > 0:
-            image = images[0]['src']
+            image = full_image(images[0]['src'])
             data.append((title, author, image, date))
     
     return data
