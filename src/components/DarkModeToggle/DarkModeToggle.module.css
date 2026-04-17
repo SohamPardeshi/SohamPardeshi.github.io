@@ -1,0 +1,55 @@
+.toggle {
+  position: relative;
+  width: 44px;
+  height: 24px;
+  min-width: 44px;
+  background-color: #363636;
+  border: none;
+  border-radius: 24px;
+  cursor: pointer;
+  padding: 0;
+  overflow: hidden;
+  transition: background-color 0.5s ease;
+  outline: none;
+  flex-shrink: 0;
+}
+
+.toggle:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+.knob {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 2px #a5abba;
+  overflow: hidden;
+  transition: transform 0.5s ease;
+}
+
+.knob::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 50%;
+  background-color: #a5abba;
+  border-radius: 0;
+  transition: border-radius 0.5s ease, width 0.5s ease, height 0.5s ease, left 0.5s ease, transform 0.5s ease;
+}
+
+.on .knob {
+  transform: translateX(20px);
+}
+
+.on .knob::before {
+  border-radius: 50%;
+  width: 150%;
+  height: 85%;
+  left: 40%;
+  transform: translate(-10%, -40%);
+}
