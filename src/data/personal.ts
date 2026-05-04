@@ -6,11 +6,11 @@ const personal: PersonalInfo = {
   // tagline: 'Software Engineer; Part-time Lecturer',
   bio: [
     [
-      { text: 'I am existentially-driven by the pursuit of humor. I subscribe to ' },
-      { text: 'the incongruity theory', url: 'https://plato.stanford.edu/entries/humor/#HumoBadRepu:~:text=4.-,The%20Incongruity%20Theory,-The%20second%20account' },
+      { text: 'I am existentially-driven by the pursuit of humor. I believe ' },
+      { text: 'the theory', url: 'https://plato.stanford.edu/entries/humor/#HumoBadRepu:~:text=4.-,The%20Incongruity%20Theory,-The%20second%20account' },
       { text: ' that we find things funny when they subvert our expectations in a satisfying and logically consistent way.' },
     ],
-    `This philosophy is why I love to learn! When I learn something new, it uncovers a gap between what I expected and what's actually true. Exploring that gap is both fun and funny for me.`,
+    `This belief is also why I love to learn! When I learn something new, it uncovers a gap between what I expected and what's actually true. Exploring that gap is both fun and funny for me.`,
     `That's why I feel very lucky to have many smart friends who know a great deal (and who teach me a little bit) about pop culture, epistemology, sports, history, molecular biology, architecture, credit cards, neuroscience, video games, and cars. Most of my free time is spent yapping about these topics with my friends or exploring my hobbies below.`,
   ],
   photo: '/profile.jpg',

@@ -1,7 +1,8 @@
 import type { ComponentType } from 'react'
 import type { Post } from '@/types'
-import ArijeetOnePost from '@/writing/posts/ArijeetOnePost'
-import InteractiveModelingPost from '@/writing/posts/InteractiveModelingPost'
+import ArijeetOnePoem from '@/writing/poems/ArijeetOne'
+import AsIfToSayPoem from '@/writing/poems/AsIfToSay'
+import UntrustedPoem from '@/writing/poems/Untrusted'
 import OnMetricsPost from '@/writing/posts/OnMetrics'
 
 export interface WritingPost extends Post {
@@ -16,7 +17,23 @@ const posts: WritingPost[] = [
     date: '2024-09-17',
     excerpt: 'A poem for my best friend, written a month after we moved to different cities.',
     tags: ['poetry', 'friendship'],
-    component: ArijeetOnePost,
+    component: ArijeetOnePoem,
+  },
+  {
+    slug: 'asiftosay',
+    title: 'As If To Say',
+    date: '2016-05-19',
+    excerpt: 'A poem written in high school after a conversation with a friend.',
+    tags: ['poetry', 'friendship', 'personal values'],
+    component: AsIfToSayPoem,
+  },
+  {
+    slug: 'untrusted',
+    title: 'Untrusted',
+    date: '2025-10-23',
+    excerpt: 'About my father\'s addiction to cigarettes.',
+    tags: ['poetry', 'family'],
+    component: UntrustedPoem,
   },
   {
     slug: 'on-metrics',

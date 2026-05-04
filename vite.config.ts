@@ -4,6 +4,9 @@ import { resolve } from 'path'
 
 export default defineConfig({
   plugins: [react()],
+  build: {
+    outDir: 'docs',
+  },
   resolve: {
     alias: { '@': resolve(__dirname, 'src') },
   },

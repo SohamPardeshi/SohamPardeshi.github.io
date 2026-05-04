@@ -27,6 +27,14 @@ export interface Course {
   name: string
   code?: string
   term: string
+  role: string
+  description: string
+  link?: string
+}
+
+export interface TeachingAward {
+  name: string
+  year: string
   description: string
   link?: string
 }
