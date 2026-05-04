@@ -1,29 +1,27 @@
 export interface PersonalInfo {
   name: string
+  pronouns?: string
   tagline?: string
-  bio: string[]
+  bio: (string | Segment[])[]
   photo: string
   photoDark?: string
   links: { label: string; url: string }[]
+  visitedCountries: string[]
+  travelIntro?: string
+  travelNote?: string
   interestsIntro?: string
   interests: {
     label: string
     icon: string
     groups: {
       genre?: string
+      columns?: number
       entries: { text: string; url?: string }[][]
     }[]
   }[]
 }
 
-export interface Role {
-  title: string
-  company: string
-  location: string
-  start: string
-  end: string | null
-  bullets: string[]
-}
+export interface Segment { text: string; url?: string }
 
 export interface Course {
   name: string
@@ -34,9 +32,11 @@ export interface Course {
 }
 
 export interface Post {
+  slug: string
   title: string
   date: string
   excerpt: string
-  url?: string
+  tags?: string[]
+  externalUrl?: string
   venue?: string
 }

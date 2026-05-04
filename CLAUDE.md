@@ -27,8 +27,26 @@ npm run lint      # TypeScript type-check (tsc --noEmit)
 
 **Tab structure**: Each tab is a top-level route rendered by `App.tsx` based on the current hash. Tabs live in `src/tabs/` (e.g. `PersonalTab.tsx`, `CareerTab.tsx`). Each tab owns its own layout and subcomponents under `src/components/<tab>/`.
 
-**State**: React Context for global UI state (active tab). Tab-local state lives in each tab component.
+**State**: No global React Context — tab-local state lives in each tab component. Dark mode is handled via a `useDarkMode` hook (watches `prefers-color-scheme`).
 
 **Data**: Static content in `src/data/` as TypeScript objects/arrays. Types defined in `src/types/`.
 
 **Path alias**: `@/` → `src/`.
+
+## Components
+
+- **Footer** (`src/components/Footer/`) — simple copyright footer, rendered by `App.tsx`.
+- **WorldMap** (`src/components/WorldMap/`) — interactive world map using `react-simple-maps` + Natural Earth projection. Renders visited countries as hatched overlays. Supports dark mode. Used in `PersonalTab`.
+- **DarkModeToggle** (`src/components/DarkModeToggle/`) — toggle in the NavBar.
+
+## In-Progress / Experimental
+
+- **Career2Tab** (`src/tabs/Career2Tab/`) — experimental Gantt-chart timeline view of career history (education, teaching, work rows) using pure CSS positioned `div` bars. Accessible at `/#career2` but not in the NavBar yet. Lane-assignment logic handles overlapping roles. Intended as a potential replacement or supplement to `CareerTab`.
+
+## Favicons
+
+Two favicon variants exist in `public/`: `favicon-frog.png` (default) and `favicon-frog-horns.png` (dark mode / alt). These mirror the profile photo variants (`profile.jpg` / `profile-horns.jpg`).
+
+## Personal Data Shape
+
+`src/data/personal.ts` exports a `PersonalInfo` object with: `name`, `pronouns`, `bio`, `photo`, `photoDark`, `links`, `interestsIntro`, `interests` (books/music/etc. with grouped entries and inline links), `visitedCountries` (ISO alpha-2 codes), `travelIntro`, `travelNote`.

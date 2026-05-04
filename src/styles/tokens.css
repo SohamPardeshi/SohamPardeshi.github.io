@@ -18,6 +18,7 @@
   --font-ui: 'Source Sans 3', 'Avenir', Helvetica, Arial, sans-serif;
   --font-mono: 'Courier New', monospace;
 
+  --text-xs: 0.75rem;
   --text-sm: 0.875rem;
   --text-base: 1.1rem;
   --text-lg: 1.125rem;
@@ -25,7 +26,7 @@
   --text-2xl: 1.5rem;
   --text-3xl: 2rem;
 
-  --content-max: 1100px;
+  --content-max: 1200px;
   --radius: 6px;
   --shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
 }
@@ -35,7 +36,7 @@ body.dark-mode {
   --color-surface: #242424;
   --color-border: #363636;
   --color-text: #e8e8e8;
-  --color-text-muted: #a0a0a0;
+  --color-text-muted: #a8a8a8;
   --color-accent: #63a8e0;
   --color-accent-hover: #89bfe8;
   --shadow: 0 1px 3px rgba(0, 0, 0, 0.4);

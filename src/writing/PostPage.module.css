@@ -1,0 +1,144 @@
+.article {
+  display: grid;
+  gap: var(--space-md);
+}
+
+.article ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+
+.article h2 {
+  font-family: var(--font-ui);
+  font-size: var(--text-xl);
+  margin-top: var(--space-md);
+}
+
+.figure {
+  display: grid;
+  gap: var(--space-xs);
+  margin-top: var(--space-sm);
+}
+
+.imagePlaceholder {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+  background:
+    radial-gradient(circle at 20% 25%, color-mix(in srgb, var(--color-accent) 18%, transparent), transparent 40%),
+    radial-gradient(circle at 75% 70%, color-mix(in srgb, var(--color-accent) 12%, transparent), transparent 35%),
+    var(--color-surface);
+}
+
+.figure figcaption {
+  color: var(--color-text-muted);
+  font-size: var(--text-sm);
+}
+
+.button {
+  justify-self: start;
+  font-family: var(--font-ui);
+  font-size: var(--text-sm);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  background: var(--color-bg);
+  color: var(--color-text);
+  padding: 0.35rem 0.7rem;
+  cursor: pointer;
+}
+
+.callout {
+  border-left: 3px solid var(--color-accent);
+  background: color-mix(in srgb, var(--color-accent) 8%, transparent);
+  padding: var(--space-sm);
+  border-radius: 6px;
+}
+
+.poemContext {
+  margin-top: var(--space-lg);
+  border-left-width: 2px;
+  border-left-color: #cdb980;
+  background: rgba(246, 240, 220, 0.72);
+  box-shadow: inset 0 0 0 1px rgba(144, 118, 48, 0.08);
+  padding: 0.28rem 0.9rem 0.8rem;
+}
+
+body.dark-mode .poemContext {
+  border-left-color: #9c8a58;
+  background: rgba(73, 66, 46, 0.45);
+  box-shadow: inset 0 0 0 1px rgba(199, 180, 118, 0.1);
+}
+
+.calloutHeading {
+  font-family: var(--font-ui);
+  font-size: 0.5rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin: 0 0 0.14rem;
+}
+
+.calloutBody {
+  margin: 0;
+  font-size: var(--text-sm);
+  line-height: 1.55;
+  color: var(--color-text-muted);
+}
+
+.quoteBox {
+  margin: var(--space-md) 0;
+  margin-left: clamp(0.9rem, 4vw, 2.4rem);
+  margin-right: clamp(2.5rem, 4vw, 2.4rem);
+  padding: 0.9rem 1rem 0.85rem 1rem;
+  border-left: 4px solid #7f90ab;
+  border-radius: 3px 8px 8px 3px;
+  background: #f3f5f8;
+  box-shadow: inset 0 0 0 1px rgba(69, 78, 94, 0.06);
+}
+
+body.dark-mode .quoteBox {
+  border-left-color: #88a0c3;
+  background: rgba(119, 131, 153, 0.12);
+  box-shadow: inset 0 0 0 1px rgba(153, 167, 190, 0.16);
+}
+
+.quoteText {
+  position: relative;
+  margin: 0;
+  padding-left: 0;
+  font-size: 1.03rem;
+  line-height: 1.6;
+  color: #374151;
+  font-style: normal;
+}
+
+body.dark-mode .quoteText {
+  color: #d1d7e0;
+}
+
+.quoteAttribution {
+  margin-top: 0.55rem;
+  padding-left: 0;
+  font-family: var(--font-ui);
+  font-size: 0.8rem;
+  letter-spacing: 0.02em;
+  color: var(--color-text-muted);
+}
+
+.poem {
+  display: grid;
+  gap: var(--space-lg);
+  margin-top: var(--space-sm);
+}
+
+.stanza {
+  display: grid;
+  gap: 0.15rem;
+}
+
+.stanza p {
+  margin: 0;
+  white-space: pre-wrap;
+}

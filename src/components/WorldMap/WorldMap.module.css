@@ -1,0 +1,25 @@
+.frame {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.15));
+  transition: filter 0.3s;
+}
+
+body.dark-mode .frame {
+  filter: drop-shadow(0 2px 12px rgba(0, 0, 0, 0.5));
+}
+
+.tooltip {
+  position: absolute;
+  pointer-events: none;
+  background: var(--color-text);
+  color: var(--color-bg);
+  font-family: var(--font-ui);
+  font-size: var(--text-sm);
+  padding: 3px 8px;
+  border-radius: var(--radius);
+  white-space: nowrap;
+  z-index: 10;
+  opacity: 0.9;
+}

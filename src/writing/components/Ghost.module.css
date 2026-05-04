@@ -1,0 +1,155 @@
+.wrapper {
+  cursor: default;
+  position: relative;
+}
+
+/* Inline text with faint dashed underline */
+.text {
+  border-bottom: 1.5px dashed rgba(0, 0, 0, 0.3);
+  transition: border-color 0.25s ease;
+}
+
+.wrapperHovered .text {
+  border-bottom-color: rgba(0, 0, 0, 0.55);
+}
+
+/* ── Card mode: portalled into postContent, visible on wide screens ── */
+.note {
+  position: absolute;
+  left: calc(100% + 24px);
+  transform: translateY(-50%);
+  width: 180px;
+  padding: 0.4rem 0.6rem;
+  border: 1px solid rgba(200, 180, 80, 0.25);
+  border-radius: 5px;
+  background: rgba(255, 248, 220, 0.5);
+  color: rgba(0, 0, 0, 0.25);
+  font-size: var(--text-sm, 0.85rem);
+  line-height: 1.4;
+  transition: color 0.25s ease, background 0.25s ease, border-color 0.25s ease;
+  pointer-events: auto;
+  white-space: normal;
+}
+
+.noteHovered {
+  background: rgba(255, 248, 220, 0.9);
+  border-color: rgba(200, 180, 80, 0.6);
+  color: rgba(0, 0, 0, 0.75);
+}
+
+/* Links inside ghost notes */
+.note a,
+.tooltip a {
+  color: rgba(80, 140, 200, 0.6);
+  transition: color 0.2s ease;
+}
+
+.note a:hover,
+.tooltip a:hover {
+  color: rgba(30, 100, 180, 1);
+}
+
+.noteHovered a {
+  color: rgba(80, 140, 200, 0.85);
+}
+
+.noteHovered a:hover {
+  color: rgba(30, 100, 180, 1);
+}
+
+/* ── Tooltip mode: inline, visible on narrow screens ── */
+.tooltip {
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + 6px);
+  left: 0;
+  transform: none;
+  width: max-content;
+  max-width: 240px;
+  padding: 0.4rem 0.6rem;
+  border: 1px solid rgba(200, 180, 80, 0.5);
+  border-radius: 5px;
+  background: rgba(255, 248, 220, 0.95);
+  color: rgba(0, 0, 0, 0.7);
+  font-size: var(--text-sm, 0.85rem);
+  line-height: 1.4;
+  white-space: normal;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+  z-index: 10;
+  display: none;
+}
+
+.tooltipBelow {
+  bottom: auto;
+  top: calc(100% + 6px);
+}
+
+.wrapperHovered .tooltip {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Wide screens: show card, hide tooltip */
+@media (min-width: 1201px) {
+  .tooltip {
+    display: none !important;
+  }
+}
+
+/* Narrow screens: show tooltip, hide card */
+@media (max-width: 1200px) {
+  .note {
+    display: none;
+  }
+  .tooltip {
+    display: block;
+  }
+}
+
+/* ── Dark mode ── */
+body.dark-mode .text {
+  border-bottom-color: rgba(255, 255, 255, 0.2);
+}
+
+body.dark-mode .wrapperHovered .text {
+  border-bottom-color: rgba(255, 255, 255, 0.5);
+}
+
+body.dark-mode .note {
+  background: rgba(60, 50, 20, 0.3);
+  border-color: rgba(180, 160, 80, 0.2);
+  color: rgba(255, 255, 255, 0.2);
+}
+
+body.dark-mode .noteHovered {
+  background: rgba(60, 50, 20, 0.7);
+  border-color: rgba(180, 160, 80, 0.5);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+body.dark-mode .tooltip {
+  background: rgba(50, 45, 25, 0.95);
+  border-color: rgba(180, 160, 80, 0.5);
+  color: rgba(255, 255, 255, 0.7);
+}
+
+body.dark-mode .note a,
+body.dark-mode .tooltip a {
+  color: rgba(120, 180, 240, 0.5);
+}
+
+body.dark-mode .note a:hover,
+body.dark-mode .tooltip a:hover {
+  color: rgba(140, 200, 255, 1);
+}
+
+body.dark-mode .noteHovered a {
+  color: rgba(120, 180, 240, 0.8);
+}
+
+body.dark-mode .noteHovered a:hover {
+  color: rgba(140, 200, 255, 1);
+}
