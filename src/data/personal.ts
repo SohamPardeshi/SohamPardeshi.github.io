@@ -6,7 +6,7 @@ const personal: PersonalInfo = {
   // tagline: 'Software Engineer; Part-time Lecturer',
   bio: [
     [
-      { text: 'Humor is why I do most things — why I like my friends, why I read what I read, why I ask a lot of questions. I believe that everything is hilarious and absurd if you spend enough time thinking about it. ' },
+      { text: 'Humor is why I do most things - why I like my friends, why I read what I read, why I ask a lot of questions. I believe that everything is hilarious and absurd if you spend enough time thinking about it. ' },
     ],
     `It's also why I love to learn! When I learn something new, it uncovers a gap between what I expected and what's actually true. Exploring that gap is both fun and funny for me.`,
     `That's why I feel very lucky to have many smart friends who know a great deal (and who teach me a little bit) about pop culture, epistemology, sports, history, molecular biology, architecture, credit cards, neuroscience, video games, and cars. Most of my free time is spent yapping about these topics with my friends or exploring my hobbies below.`,
