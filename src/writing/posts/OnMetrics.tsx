@@ -171,7 +171,7 @@ export default function OnMetricsPost() {
       </p>
 
       <p>
-          <Ghost note={<>I am shamelessly exploiting this bias right now. Earlier, I wrote some formal definitions of optimization. Those definitions were correct, but completely irrelevant. I added them specifically so I could manipulate you by taking advantage of your physics envy. <br/><br/> Stop and think. Did you find those definitions appealing? Did you believe me more because I wrote some math notation? If yes, then you may be susceptible to this bias.<br/><br/>That mathetmatical notation just repeated what I said in plain English. It added nothing new to my argument!</>}>
+          <Ghost note={<>I am shamelessly exploiting this bias right now. Earlier, I wrote some formal definitions of optimization. Those definitions were correct, but completely irrelevant. I added them <i>specifically</i> so I could manipulate you by taking advantage of your physics envy. <br/><br/> Stop and think. Did you find those definitions appealing? Did you believe me more because I wrote some math notation? If yes, then you may be susceptible to this bias.<br/><br/>That mathetmatical notation just repeated what I said in plain English. It added nothing new to my argument!</>}>
             This bias has broken out of academia and ingrained itself into the public consciousness. There's a widespread, mostly unconscious belief that real knowledge is quantitative. That if we can't measure something, we don't really understand it. That the more precisely we can express a claim in numbers, the more true it is.
           </Ghost>
       </p>

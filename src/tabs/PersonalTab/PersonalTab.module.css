@@ -182,12 +182,39 @@
   line-height: 1.7;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
   .card {
     grid-template-columns: 1fr;
   }
 
+  .section {
+    padding: var(--space-2xl) var(--space-xl);
+  }
+
   .photo {
-    width: 50%;
+    width: 75%;
+    max-width: 680px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .section {
+    padding: var(--space-2xl) var(--space-md);
+  }
+
+  .photo {
+    width: 95%;
+    max-width: 380px;
+    margin: 0 auto;
+  }
+
+  .interestCard {
+    grid-template-columns: 100px 1fr;
+    gap: var(--space-md);
+  }
+
+  .interestItems {
+    grid-template-columns: 1fr !important;
   }
 }

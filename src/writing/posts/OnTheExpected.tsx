@@ -26,7 +26,7 @@ export default function OnTheExpectedPost() {
         We had found a website of "anti-jokes" and were taking turns reading them to each other. When it was his turn to read this one, I laughed so hard I couldn't breathe.
       </p>
       <p>
-        <Ghost note="I probably don't remember the original memory exactly, but my brain can visualize a version of it still.">I still remember the confused look on his face.</Ghost> I was wheezing so hard that I could barely open my eyes, but he kept trying to ask me what was so funny as if he had missed some crucial part of the joke.
+        <Ghost note="I probably don't remember the original memory exactly, but my brain can visualize a version of it still.">I still remember the confused look on his face.</Ghost> Despite my wheezing, he kept trying to ask me what was so funny as if he had missed some crucial part of the joke.
       </p>
       <p>
         He hadn't missed anything. I did not pick up on some hidden meaning or clever twist. It was just a question with a completely straightforward answer that happened to be funny <i>because it caught me off guard.</i>
@@ -35,7 +35,7 @@ export default function OnTheExpectedPost() {
         In retrospect, I realize it did so in two ways:
       </p>
       <p>
-        <Ghost note="My brain was primed for this sort of question from years of rigorous middle school homework">First, the joke started in a familiar format: "what do X and Y have in common?"</Ghost> Usually, we answer this question with a single property shared by both X and Y <i>individually</i>. So when I heard the punchline, my brain stalled. The joke answered with a single property shared by X and Y <i>collectively</i>. Technically, this is a valid way to interpret the question. It's not common, but it is valid. The joke subverted my expectations by exploiting a linguistic ambiguity.
+        <Ghost note="My brain was primed for this sort of question from years of rigorous middle school homework">First, the joke started in a familiar format: "what do X and Y have in common?"</Ghost> Usually, we answer this question with a single property shared by both X and Y <i>individually</i>. So when I heard the punchline, my brain stalled. The joke answered with a single property shared by X and Y <i>collectively</i>. An elephant is not purple. But it's true that when you have an elephant and a grape together, one of them is purple. Technically, this is a valid way to interpret the question so the joke subverted my expectations by exploiting a linguistic ambiguity.
       </p>
       <p>
         Second, the punchline of the joke was boring. We had been reading dozens of "anti-jokes" moments before and all of the jokes had ridiculous and unexpected punchlines.
@@ -86,14 +86,14 @@ export default function OnTheExpectedPost() {
         Philosophers don't explain why this mechanism exists, they only observe it. But folks who study child development have some theories. Children know virtually nothing about the world and have relatively few animal instincts. Evolutionarily, it makes sense that we would have a strong positive response to that surprise so that they are motivated to explore the world.
       </p>
       <p>
-        This matches my own experience with children. My niece and nephew (who have just learned to speak) know very little about the world. But they are constantly happy and are far more comfortable navigating new scenarios than me as long as they can see my sister or her husband. 
+        This matches my own experience with children. My niece and nephew have just learned to speak and know very little about the world. But they are constantly happy and are far more comfortable navigating new scenarios than me (as long as they can see my sister or her husband). 
       </p>
       <p>
-        Regardless of its origins, I think the incongruity theory is sound. It asserts that every joke has two parts. First, a setup that builds an expectation - a pattern your brain latches onto and starts running forward with. Second, a punchline that breaks the pattern. The laughter is just your brain's natural response to the incongruity.
+        Regardless of its origins, I think the incongruity theory is sound. It asserts that every joke has two parts. First, a setup that builds an expectation, i.e. a pattern your brain latches onto and starts running forward with. Second, a punchline that breaks the pattern. The laughter is just your brain's natural response to the incongruity.
       </p>
       <Ghost note="There are other theories. Superiority theory says we laugh to feel dominant over others. Relief theory says laughter releases nervous energy. Both of these feel true for specific kinds of humor.">
         <p>
-          The elephant-and-grape joke is a textbook case. Setup builds a pattern (riddles have clever answers). Punchline destroys it (this riddle doesn't). Naturally, my demise follows in the form of endless laughter.
+          The elephant-and-grape joke is a textbook case. Setup builds a pattern (anti-jokes have shocking answers). Punchline destroys it (this one doesn't). Naturally, my demise followed in the form of endless laughter.
         </p>
       </Ghost>
 
@@ -138,55 +138,50 @@ export default function OnTheExpectedPost() {
         <Ghost note="I added this sentence because it feels wrong to end a section with a bullet point.">So yeah. This is a sentence.</Ghost>
       </p>
 
-      <h2>A good conversation and a good joke</h2>
+      <h2>Personal Reflections</h2>
       <p>
-        Here is something I was not able to articulate until recently. My friends had made several adjacent comments before, but I only began to understand this part of myself in the past few months. I have always been described as a curious person, but I didn't realize that my particular flavor of curiosity manifested through a love of surprise.
+        Over the years, many of my friends had commented on a particular character trait of mine. It is something I was not able to articulate until recently. I am not a <i>curious</i> person, but I am a <i>questioning</i> one.
       </p>
       <p>
-        Like most people (I think), I have a mental model of how the world works. I am constantly thinking and updating this model. Anytime something happens, I evaluate that thing against my model. When a friend tells me that he started a new hobby, I update. When my girlfriend tells me that she's upset about something, I evaluate it against my model. When I am debating a topic with someone, I evaluate it against my model.
+        When I see a biker, a dozen thoughts instantly pop into my mind: where are they going, are they late for something, did they build their own bike, is that bike their favorite color, how often have they ridden without a helmet, do they have biking friends, etc... 
       </p>
       <p>
-        Most things are expected - it would be a very strange world if they weren't. But frequently, someone says something that doesn't fit. Their experience contradicts what I thought I knew. And when that happens, something switches on inside me.
+        Fundamentally, <i>I do not care</i> about the answers to these questions. They simply materialize within my mind and quickly fade away. I do not think these questions are important or interesting. I'm certainly not trying to learn something from them. But I do think of them.
       </p>
-      <Ghost note={<>This is not always a good thing. When my friend breaks up with his girlfriend, he doesn't need to hear me asking a hundred questions to build my model of how this unexpected event happened. That's a bit selfish. I'm sure he would rather be supported and comforted.</>}>
-        <p>
-          I get obsessed. I need to understand why my model was wrong. I ask a lot of questions. Usually, a lot of dumb questions. Questions that I'm pretty sure that I know the answer to, but if I didn't? <i>That</i> would be hilarious.
-        </p>
-      </Ghost>
-      <p>
-        And then at some point, it resolves. My model updates and the world makes sense again. Or my friends tell me to stop asking questions because my fun is starting to take away from their fun. But if I manage to make it to the end, when that resolution hits, the feeling I have is the same feeling I get from a great joke. Setup, subversion, delighted wonder.
+      <p> 
+        Like most people, my mental model of the world is shallow. It must be because nobody can know everything. And by definition, one's mental model specifies their expecatations. So I <i>expect</i> the world to be shallow, even though intellectually I know it is not.
       </p>
       <p>
-        This is not a metaphor. I am not saying that learning is <i>like</i> humor, or that it has a <i>similar</i> structure, or that the two are <i>analogous</i>. I am saying that when someone tells me something that breaks my model of the world, the experience is <i>funny</i>.
+        So when I ask a question about something that I expect to have no interesting answer for, I am usually surprised to discover that the world has higher fidelity than I thought. And that surprise turns into delight.
       </p>
       <p>
-        I can only make this claim for myself, but I really don't think I am alone in feeling this way. I suspect that many of my friends who enjoy learning have a similar feeling. Try thinking about the last time someone told you a fact that genuinely blew your mind. Did you laugh? A lot of people do. We usually chalk it up to surprise or disbelief. I think the laughter is telling us something real about what's happening underneath.
+        To be clear, this is not an metaphor. I am not saying that learning is <i>like</i> humor, or that it has a <i>similar</i> structure, or that the two are <i>analogous</i>. I am saying that when I discover something that breaks my model of the world, the experience is <i>actually</i> funny.
       </p>
       <p>
-        But this only happens when you expect to know how the world works. 
+        I can only make this claim for myself, but I really don't think I am alone in feeling this way. I suspect that many of my friends who enjoy learning share this process. Try thinking about the last time someone told you a fact that genuinely blew your mind. Did you laugh? We usually chalk it up to surprise or disbelief. I think the laughter is telling us something real about what's happening underneath.
       </p>
 
       <h2>A choice</h2>
       <p>
-        In Mr. Wiedemann's seventh grade science class, I had a reputation. Not the cool kind. I would hear something interesting in a lesson, ask a question about it, hear something interesting in the answer, ask another question about that, and then thirty minutes later class would be over and we hadn't gotten to the worksheet. My classmates thought I was running an elaborate time-wasting operation. They made so much fun of me for it that I started pretending they were right - it was easier to be the kid who was cleverly wasting time than the kid who was so engrossed in asking questions that he couldn't stop.
+        In Mr. Wiedemann's seventh grade science class, I had a reputation. Unfortunately, it was not the cool kind. I would hear something interesting in a lecture, ask a question about it, hear something interesting in the answer, ask another question about that, and then thirty minutes later class would be over and we hadn't gotten to the worksheet. My classmates thought I was running an elaborate time-wasting operation. They made so much fun of me for it that I started pretending they were right - it was easier to be the kid who was cleverly wasting time than the kid who was so engrossed in asking questions that he couldn't stop.
       </p>
       <p>
         Eventually Mr. Wiedemann moved me to the back of the room and banned me from asking questions. For the sake of the class, it was probably a good pedagogical decision.
       </p>
       <p>
-        I haven't lost this personality trait yet. Earlier this year, I went to a three-star Micheline restaurant in Rome with my friends. The staff were walking us through each course - the sourcing, the preparation, the origin of the plates. I was having a wonderful time. At some point, I noticed my friends were laughing. Not at the food. At me. They thought I was asking a lot of dumb questions and making a fool of myself. 
+        I did not ask those questions because I wanted to waste time, <Ghost note="Learning was a fortuitous side effect">or even to learn</Ghost>. But because it was enjoyable to discover that my questions had answers.
       </p>
       <p>
-        It was seventh grade all over again. 
+        I haven't lost this personality trait. Earlier this year, I went to a three-star Michelin restaurant in Rome with my friends. Occasionally, the staff would interrupt our group conversation to introduce us to the next course and answered questions we had about it. We learned how the plates were sourced from a specific artisan in Italy. How the painting on the wall had not changed in decades. And a lot about the food. I was having a wonderful time. But at some point, I noticed my friends were laughing at me. They thought I was asking the staff a lot of dumb questions and making a fool of myself. Of course, they enjoyed seeing me do this and encouraged me to keep going.
       </p>
       <p>
-        Here's the thing I've come to accept. Although people have made fun of me, I enjoy asking my questions too much to stop. My willingness to ask might be embarrassing, or awkward, or unimportant to anyone but me. But all of my friends came out of that dinner having learned a tiny bit more about something they had not thought about prior.
+        It was seventh grade all over again. Just like middle school, I played into it a bit more once I realized I had an audience.
+      </p>
+      <p>
+        <Ghost note="This is frequently a bad thing. It is selfish to prioritze my enjoyment over others. When my friend breaks up with their partner, I'm sure they do not want to hear a hundred questions about their feelings and the cause of their breakup just so I can explore my mental model of their relationship">Here's the thing I've come to accept. Although people have made fun of me, I enjoy asking my questions too much to stop.</Ghost> My willingness to ask might be embarrassing, or awkward, or unimportant to anyone but me. But I have genuine fun. And all of my friends came out of that dinner having learned a tiny bit more about our world.
       </p>
       <p>
         I have decided that I like this about myself. It may be one of my best qualities; it is certainly a defining one. 
-      </p>
-      <p>
-        I constantly seek to be delighted. I want to be surprised and to laugh and to learn. And I want to do all of those things as often as possible. And I am going to drag my friends with me, whether they like it or not.
       </p>
       <p>
         Anyway, that brings me back to the phrase I have been mulling over.

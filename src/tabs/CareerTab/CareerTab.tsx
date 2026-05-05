@@ -53,25 +53,19 @@ function Blurb({ blurb }: { blurb: TimelineEntry['blurb'] }) {
   return (
     <div className={styles.workBlurbRich}>
       {blurb.paragraphs.map((paragraph) => (
-        <p key={paragraph} className={styles.workBlurb}>
-          {paragraph}
-        </p>
+        <p key={paragraph} className={styles.workBlurb} dangerouslySetInnerHTML={{ __html: paragraph }} />
       ))}
       {blurb.bullets && blurb.bullets.length > 0 && (
         <ul className={styles.workBlurbList}>
           {blurb.bullets.map((item) => (
-            <li key={item} className={styles.workBlurbItem}>
-              {item}
-            </li>
+            <li key={item} className={styles.workBlurbItem} dangerouslySetInnerHTML={{ __html: item }} />
           ))}
         </ul>
       )}
       {blurb.paragraphsAfterBullets && blurb.paragraphsAfterBullets.length > 0 && (
         <div className={styles.workBlurbAfterBullets}>
           {blurb.paragraphsAfterBullets.map((paragraph) => (
-            <p key={paragraph} className={styles.workBlurb}>
-              {paragraph}
-            </p>
+            <p key={paragraph} className={styles.workBlurb} dangerouslySetInnerHTML={{ __html: paragraph }} />
           ))}
         </div>
       )}

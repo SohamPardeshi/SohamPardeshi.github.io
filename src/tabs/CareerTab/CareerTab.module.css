@@ -202,6 +202,10 @@
   color: var(--color-text);
 }
 
+.workBlurbItem b {
+  font-weight: 600;
+}
+
 .workBlurbAfterBullets {
   display: grid;
   gap: var(--space-xs);
