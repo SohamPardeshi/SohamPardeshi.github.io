@@ -41,7 +41,7 @@ const entries: TimelineEntry[] = [
       bullets: [
         'I wrote formal models (i.e. TLA+ specifications) to verify the correctness of the migration process. These models catch tricky race conditions and are necessary to prove correctness in a distributed system.',
         'I designed a chaos testing framework which randomly performs specific, destructive actions in preprod to put stress on our auto-recovery systems. This chaos testing framework was later expanded to support many non-migration scenarios.',
-        'I worked with folks at Microsoft Research to integrate model-based testing into Azure Storage. This approach allowed us to automatically generate comprehensive test suites. This was essential to proving behavioral equivalence of our system.',
+        'I worked with folks at Microsoft Research to integrate property-based testing into Azure Storage. This approach allowed us to automatically generate comprehensive test suites. This was essential to proving behavioral equivalence of our system.',
         'I built pipelines to continuously monitor for known issues (e.g. slow hardware) and automatically try safe mitigations.'
       ],
       paragraphsAfterBullets: [

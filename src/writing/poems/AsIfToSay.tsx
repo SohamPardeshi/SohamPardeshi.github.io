@@ -15,7 +15,7 @@ to something <i>worth</i> your tears tonight.
 
 I got the gift I asked for, see.
 No tears have ever come from me.
-But not because my will was strong —
+But not because my will was strong;
 I've just had nothing all along.`
 
 function parsePoem(text: string) {

@@ -4,6 +4,7 @@ import ArijeetOnePoem from '@/writing/poems/ArijeetOne'
 import AsIfToSayPoem from '@/writing/poems/AsIfToSay'
 import UntrustedPoem from '@/writing/poems/Untrusted'
 import OnMetricsPost from '@/writing/posts/OnMetrics'
+import OnTheExpectedPost from '@/writing/posts/OnTheExpected'
 
 export interface WritingPost extends Post {
   tags: string[]
@@ -42,6 +43,14 @@ const posts: WritingPost[] = [
     excerpt: 'Thoughts on how outsourcing our judgement to metrics can make us lose our taste.',
     tags: ['opinion', 'metrics', 'engineering', 'social'],
     component: OnMetricsPost,
+  },
+  {
+    slug: 'on-the-expected',
+    title: 'Only Expect the Expected',
+    date: '2025-12-12',
+    excerpt: 'Why "expect the unexpected" is terrible advice - and why surprise is the mechanism behind humor and learning.',
+    tags: ['opinion', 'humor', 'learning', 'personal values'],
+    component: OnTheExpectedPost,
   },
 ]
 

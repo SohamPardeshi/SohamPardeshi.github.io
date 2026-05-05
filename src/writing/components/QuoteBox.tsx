@@ -1,7 +1,7 @@
 import styles from '@/writing/PostPage.module.css'
 
 interface QuoteBoxProps {
-  quote: string
+  quote: React.ReactNode
   attribution?: string
 }
 
