@@ -1,28 +1,34 @@
 import styles from '@/writing/PostPage.module.css'
 
 const backgroundContext =
-  'Written after my dad had a heart attack and agreed to quit smoking. He had quit many times before, but had relapsed in secret each time.'
+  'Written in college. It\'s not my favorite (it\'s a bit cringey) but I put the effort into writing it so I will upload it here for posterity.'
 
-const poemText = `I see the smoke still in your eyes,
-A hunger crouched behind your silence
-As though the ash and ember
-Have never left your lungs
+const poemText = `Fourteen characters in my header.
+I don't read them. I just carry them.
+Someone typed a name into a bar
+and now it's my life's mission.
 
-You speak of quitting
-But I hear in dad's voice the echo of return
-A door left ajar
-A lighter waiting to be ignited
+The resolver checks its cache - nothing.
+Passes me up without a word.
+The root doesn't know either
+but it knows who might so I get a referral.
 
-Mom no longer cares
-Her hope a burnt wick,
-I too withhold my trust
-And hate myself for it
+The TLD server processes thousands
+of my siblings per second. 
+Doesn't look up as it says: try 205.251.196.179.
 
-O father, heart still wounded
-Do not walk again into the fire
-I stand at the edge of your breath
-Counting its fragile rhythm,
-Fearing its end`
+The authoritative hands me an address
+the way a clerk slides a form under the glass. 
+93.184.216.34.
+
+Seven milliseconds, start to finish. Not bad.
+I'll be cached for three hundred seconds.
+After that, the next one
+will have to make the trip again.
+Same name, same question, new packet.
+
+But for those three hundred seconds
+my descendants will have direction.`
 
 function parsePoem(text: string) {
   return text
@@ -31,7 +37,7 @@ function parsePoem(text: string) {
     .map((stanza) => stanza.split('\n'))
 }
 
-export default function UntrustedPoem() {
+export default function PacketPoem() {
   const poemStanzas = parsePoem(poemText)
   const hasBackgroundContext = backgroundContext.trim().length > 0
 

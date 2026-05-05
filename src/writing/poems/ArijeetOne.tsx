@@ -22,7 +22,7 @@ function parsePoem(text: string) {
     .map((stanza) => stanza.split('\n'))
 }
 
-export default function ArijeetOnePost() {
+export default function ArijeetOnePoem() {
   const poemStanzas = parsePoem(poemText)
   const hasBackgroundContext = backgroundContext.trim().length > 0
 

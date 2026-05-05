@@ -1,10 +1,14 @@
 import type { ComponentType } from 'react'
 import type { Post } from '@/types'
+
 import ArijeetOnePoem from '@/writing/poems/ArijeetOne'
 import AsIfToSayPoem from '@/writing/poems/AsIfToSay'
 import UntrustedPoem from '@/writing/poems/Untrusted'
+import PacketPoem from '@/writing/poems/Packet'
+
 import OnMetricsPost from '@/writing/posts/OnMetrics'
 import OnTheExpectedPost from '@/writing/posts/OnTheExpected'
+import SohamismPost from '@/writing/posts/Sohamism'
 
 export interface WritingPost extends Post {
   tags: string[]
@@ -45,12 +49,28 @@ const posts: WritingPost[] = [
     component: OnMetricsPost,
   },
   {
+    slug: 'packet',
+    title: 'Packet',
+    date: '2019-11-04',
+    excerpt: 'A poem about the journey of a data packet through the network.',
+    tags: ['poetry', 'engineering'],
+    component: PacketPoem,
+  },
+  {
     slug: 'on-the-expected',
     title: 'Only Expect the Expected',
     date: '2025-12-12',
     excerpt: 'Why "expect the unexpected" is terrible advice - and why surprise is the mechanism behind humor and learning.',
     tags: ['opinion', 'humor', 'learning', 'personal values'],
     component: OnTheExpectedPost,
+  },
+  {
+    slug: 'sohamism',
+    title: 'Robust Sohamism',
+    date: '2024-12-18',
+    excerpt: 'A rigorous introduction to the most provably correct ethical framework in modern philosophy.',
+    tags: ['philosophy', 'artificial intelligence'],
+    component: SohamismPost,
   },
 ]
 

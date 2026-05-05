@@ -25,7 +25,7 @@ function parsePoem(text: string) {
     .map((stanza) => stanza.split('\n'))
 }
 
-export default function AsIfToSayPost() {
+export default function AsIfToSayPoem() {
   const poemStanzas = parsePoem(poemText)
   const hasBackgroundContext = backgroundContext.trim().length > 0
 
