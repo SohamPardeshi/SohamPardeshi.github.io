@@ -36,16 +36,16 @@ const entries: TimelineEntry[] = [
     blurb: {
       paragraphs: [
         'My team was responsible for re-architecting Azure\'s distributed file system to go from exabyte-scale to zettabyte-scale. This involved completely redesigning legacy components with a new horizontally-scalable metadata layer.',
-        'I owned the mechanism which migrated data from the legacy system to the new architecture. My code transitioned ~175EiB to the new system over three years. I designed this mechanism to minimize storage cost and eliminate all risk of data loss. To that end:'
+        'I owned the mechanism which migrated data from the legacy system to the new architecture. I transitioned ~175EiB to the new system over three years. My primary goal was to eliminate all risk of data loss during this movement. To that end:'
       ],
       bullets: [
         'I wrote <b>formal models</b> (i.e. TLA+ specifications) to verify the correctness of the migration process. These models catch tricky race conditions and are necessary to prove correctness in a distributed system.',
-        'I designed a <b>chaos testing framework</b> which randomly performs specific, destructive actions in preprod to put stress on our auto-recovery systems. This chaos testing framework was later expanded to support many non-migration scenarios.',
-        'I worked with folks at Microsoft Research to integrate <b>property-based testing</b> into Azure Storage. This approach allowed us to automatically generate comprehensive test suites. This was essential to proving behavioral equivalence of our system.',
+        'I designed a <b>chaos testing framework</b> which randomly performs specific, destructive actions in preprod to put stress on our auto-recovery systems. This chaos testing framework was later expanded to support other scenarios.',
+        'I worked with folks at Microsoft Research to integrate <b>property-based testing</b> into Azure Storage. This approach allowed us to automatically generate comprehensive test suites. This proved behavioral equivalence of our system.',
         'I built <b>auto-recovery systems</b> to continuously monitor for known issues (e.g. slow hardware) and attempt safe mitigations.'
       ],
       paragraphsAfterBullets: [
-        'This migration effort was completed with no customer impact. I also contributed to other projects on the team.'
+        'This migration effort was completed with no customer impact. Although this was my primary responsibility, I also contributed to many other projects during this time.'
       ]
     },
   },

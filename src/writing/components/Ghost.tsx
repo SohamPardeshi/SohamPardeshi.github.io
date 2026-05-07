@@ -7,9 +7,11 @@ interface GhostProps {
   children: React.ReactNode
   /** The aside/comment shown in the margin box */
   note: React.ReactNode
+  /** Vertical offset in px to shift the margin note up (negative) or down (positive) */
+  shift?: number
 }
 
-export default function Ghost({ children, note }: GhostProps) {
+export default function Ghost({ children, note, shift = 0 }: GhostProps) {
   const wrapperRef = useRef<HTMLSpanElement>(null)
   const tooltipRef = useRef<HTMLSpanElement>(null)
   const [container, setContainer] = useState<HTMLElement | null>(null)
@@ -49,7 +51,7 @@ export default function Ghost({ children, note }: GhostProps) {
     ? createPortal(
         <span
           className={`${styles.note} ${hovered ? styles.noteHovered : ''}`}
-          style={{ top: `${top}px` }}
+          style={{ top: `${top + shift}px` }}
           onMouseEnter={() => setHovered(true)}
           onMouseLeave={() => setHovered(false)}
         >

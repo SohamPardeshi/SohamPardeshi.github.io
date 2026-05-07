@@ -152,7 +152,7 @@ export default function OnTheExpectedPost() {
         Like most people, my mental model of the world is shallow. It must be because nobody can know everything. And by definition, one's mental model specifies their expecatations. So I <i>expect</i> the world to be shallow, even though intellectually I know it is not.
       </p>
       <p>
-        So when I ask a question about something that I expect to have no interesting answer for, I am usually surprised to discover that the world has higher fidelity than I thought. And that surprise turns into delight.
+        So when I ask a question about something that I expect to have no interesting answer for, I am usually surprised to discover that the world has higher fidelity than I thought. And that surprise turns into humor.
       </p>
       <p>
         To be clear, this is not an metaphor. I am not saying that learning is <i>like</i> humor, or that it has a <i>similar</i> structure, or that the two are <i>analogous</i>. I am saying that when I discover something that breaks my model of the world, the experience is <i>actually</i> funny.

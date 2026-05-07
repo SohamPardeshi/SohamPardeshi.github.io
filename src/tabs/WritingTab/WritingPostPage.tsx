@@ -2,7 +2,7 @@ import { getWritingPostBySlug } from '@/writing'
 import styles from './WritingPostPage.module.css'
 
 function formatDate(iso: string) {
-  return new Date(iso).toLocaleDateString('en-US', {
+  return new Date(iso + 'T00:00').toLocaleDateString('en-US', {
     year: 'numeric',
     month: 'long',
     day: 'numeric',

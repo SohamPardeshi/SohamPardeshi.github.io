@@ -3,7 +3,7 @@ import { getAllWritingPosts } from '@/writing'
 import styles from './WritingTab.module.css'
 
 function formatDate(iso: string) {
-  return new Date(iso).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })
+  return new Date(iso + 'T00:00').toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })
 }
 
 export default function WritingTab() {
