@@ -12,6 +12,7 @@ export default function PersonalTab() {
     <section className={styles.section}>
       <div className={styles.card}>
         <img
+          key={src}
           src={src}
           alt={name}
           className={styles.photo}

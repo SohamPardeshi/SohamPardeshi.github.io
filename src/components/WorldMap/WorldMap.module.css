@@ -6,7 +6,7 @@
   transition: filter 0.3s;
 }
 
-body.dark-mode .frame {
+body:global(.dark-mode) .frame {
   filter: drop-shadow(0 2px 12px rgba(0, 0, 0, 0.5));
 }
 

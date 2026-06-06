@@ -69,7 +69,7 @@
   padding: 0.28rem 0.9rem 0.8rem;
 }
 
-body.dark-mode .poemContext {
+body:global(.dark-mode) .poemContext {
   border-left-color: #9c8a58;
   background: rgba(73, 66, 46, 0.45);
   box-shadow: inset 0 0 0 1px rgba(199, 180, 118, 0.1);
@@ -103,7 +103,7 @@ body.dark-mode .poemContext {
   box-shadow: inset 0 0 0 1px rgba(69, 78, 94, 0.06);
 }
 
-body.dark-mode .quoteBox {
+body:global(.dark-mode) .quoteBox {
   border-left-color: #88a0c3;
   background: rgba(119, 131, 153, 0.12);
   box-shadow: inset 0 0 0 1px rgba(153, 167, 190, 0.16);
@@ -119,7 +119,7 @@ body.dark-mode .quoteBox {
   font-style: normal;
 }
 
-body.dark-mode .quoteText {
+body:global(.dark-mode) .quoteText {
   color: #d1d7e0;
 }
 

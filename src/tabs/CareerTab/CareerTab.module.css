@@ -264,46 +264,46 @@
   border-color: #c48fc0;
 }
 
-body.dark-mode .ghost_work {
+body:global(.dark-mode) .ghost_work {
   background-color: #1a2838;
   border-color: #7f9fbe;
 }
 
-body.dark-mode .ghost_teaching {
-  background-color: #342719;
-  border-color: #d3ab6d;
+body:global(.dark-mode) .ghost_teaching {
+  background-color: #52371b;
+  border-color: #b89534;
 }
 
-body.dark-mode .ghost_education {
+body:global(.dark-mode) .ghost_education {
   background-color: #1b3127;
   border-color: #84ba9f;
 }
 
-body.dark-mode .ghost_ms {
+body:global(.dark-mode) .ghost_ms {
   background-color: #2f2438;
   border-color: #cfaed8;
 }
 
-body.dark-mode .ghostTitle {
-  color: #2d3748;
-  font-weight: 750;
-}
-
-body.dark-mode .ghostCourse {
-  color: #2d3748;
+body:global(.dark-mode) .ghostTitle {
+  color: #ffffffbe;
   font-weight: 600;
 }
 
-body.dark-mode .ghostLabel {
-  color: #6b7684;
+body:global(.dark-mode) .ghostCourse {
+  color: #ffffffbe;
+  font-weight: 500;
 }
 
-body.dark-mode .ghostOrg {
-  color: #566474;
+body:global(.dark-mode) .ghostLabel {
+  color: #c7ccd3;
 }
 
-body.dark-mode .ghostDate {
-  color: #5f6b79;
+body:global(.dark-mode) .ghostOrg {
+  color: #eef2f7;
+}
+
+body:global(.dark-mode) .ghostDate {
+  color: #dde3ec;
 }
 
 .ghostLabel {

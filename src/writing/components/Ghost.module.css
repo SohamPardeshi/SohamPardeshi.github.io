@@ -110,46 +110,46 @@
 }
 
 /* ── Dark mode ── */
-body.dark-mode .text {
-  border-bottom-color: rgba(255, 255, 255, 0.2);
+body:global(.dark-mode) .text {
+  border-bottom-color: rgba(216, 216, 216, 0.75);
 }
 
-body.dark-mode .wrapperHovered .text {
-  border-bottom-color: rgba(255, 255, 255, 0.5);
+body:global(.dark-mode) .wrapperHovered .text {
+  border-bottom-color: rgb(199, 199, 199);
 }
 
-body.dark-mode .note {
-  background: rgba(60, 50, 20, 0.3);
+body:global(.dark-mode) .note {
+  background: rgba(60, 50, 20, 0.445);
   border-color: rgba(180, 160, 80, 0.2);
-  color: rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.548);
 }
 
-body.dark-mode .noteHovered {
+body:global(.dark-mode) .noteHovered {
   background: rgba(60, 50, 20, 0.7);
   border-color: rgba(180, 160, 80, 0.5);
   color: rgba(255, 255, 255, 0.8);
 }
 
-body.dark-mode .tooltip {
+body:global(.dark-mode) .tooltip {
   background: rgba(50, 45, 25, 0.95);
   border-color: rgba(180, 160, 80, 0.5);
   color: rgba(255, 255, 255, 0.7);
 }
 
-body.dark-mode .note a,
-body.dark-mode .tooltip a {
+body:global(.dark-mode) .note a,
+body:global(.dark-mode) .tooltip a {
   color: rgba(120, 180, 240, 0.5);
 }
 
-body.dark-mode .note a:hover,
-body.dark-mode .tooltip a:hover {
+body:global(.dark-mode) .note a:hover,
+body:global(.dark-mode) .tooltip a:hover {
   color: rgba(140, 200, 255, 1);
 }
 
-body.dark-mode .noteHovered a {
+body:global(.dark-mode) .noteHovered a {
   color: rgba(120, 180, 240, 0.8);
 }
 
-body.dark-mode .noteHovered a:hover {
+body:global(.dark-mode) .noteHovered a:hover {
   color: rgba(140, 200, 255, 1);
 }

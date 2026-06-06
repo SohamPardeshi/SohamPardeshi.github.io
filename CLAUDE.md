@@ -45,7 +45,7 @@ npm run lint      # TypeScript type-check (tsc --noEmit)
 
 ## Favicons
 
-Two favicon variants exist in `public/`: `favicon-frog.png` (default) and `favicon-frog-horns.png` (dark mode / alt). These mirror the profile photo variants (`profile.jpg` / `profile-horns.jpg`).
+Two favicon variants exist in `public/`: `favicon-frog.png` (default) and `favicon-frog-horns.png` (dark mode / alt). These mirror the profile photo variants (`profile.jpg` / `profile-horns.png`).
 
 ## Personal Data Shape
 

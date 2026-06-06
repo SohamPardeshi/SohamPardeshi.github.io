@@ -12,7 +12,7 @@ const personal: PersonalInfo = {
     `That's why I feel very lucky to have many smart friends who know a great deal (and who teach me a little bit) about pop culture, epistemology, sports, history, molecular biology, architecture, credit cards, neuroscience, video games, and cars. Most of my free time is spent yapping about these topics with my friends or exploring my hobbies below.`,
   ],
   photo: '/profile.jpg',
-  photoDark: '/profile-horns.jpg',
+  photoDark: '/profile-horns.png',
   links: [
     { label: 'GitHub', url: 'https://github.com/SohamPardeshi' },
     { label: 'LinkedIn', url: 'https://www.linkedin.com/in/sohampardeshi/' },
