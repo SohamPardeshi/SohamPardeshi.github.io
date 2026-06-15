@@ -5,6 +5,7 @@ import ArijeetOnePoem from '@/writing/poems/ArijeetOne'
 import AsIfToSayPoem from '@/writing/poems/AsIfToSay'
 import UntrustedPoem from '@/writing/poems/Untrusted'
 import PacketPoem from '@/writing/poems/Packet'
+import MissingYearsPoem from '@/writing/poems/MissingYears'
 
 import OnMetricsPost from '@/writing/posts/OnMetrics'
 import OnTheExpectedPost from '@/writing/posts/OnTheExpected'
@@ -55,6 +56,14 @@ const posts: WritingPost[] = [
     excerpt: 'A poem about the journey of a data packet through the network.',
     tags: ['poetry', 'engineering'],
     component: PacketPoem,
+  },
+  {
+    slug: 'missing-years',
+    title: 'The Missing Years',
+    date: '2026-06-15',
+    excerpt: 'A poem about some time I lost.',
+    tags: ['poetry', 'love'],
+    component: MissingYearsPoem,
   },
   {
     slug: 'on-the-expected',
